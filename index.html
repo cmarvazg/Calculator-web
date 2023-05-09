@@ -1,0 +1,72 @@
+<!--
+                        UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO
+                        FACULTAD DE CONTADURÍA Y ADMINISTRACIÓN
+                                        Autor
+                            Vázquez González Cristian Martín
+
+    La siguiente aplicación tiene como fin crear una calculadora de ventas con tres operaciones solicitando datos al usuario.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name"viewport" content = "with=device-with, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de ventas</title>
+    <link rel="shortcut icon" href="Images/UnamShield.png" type="image/png"/>
+</head>
+    <!--Carátula-->
+    <body background = "Images/Fondo.png" width = "1000000"><span style = "color:white">
+    <img src = "Images/Fca.png" width = "175" height = "175" align = "right"/>
+    <img src = "Images/Unam.png" width = "175" height = "175" align = "left"/>
+    <h1 align = "center">UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</h1>
+    <h2 align = "center">FACULTAD DE CONTADURÍA Y ADMINISTRACIÓN</h2>
+    <h2 align = "center">Vázquez González Cristian Martín</h2><br><br>
+    
+    <!--Invocación de la app de JavaScript-->
+    <script src = "app.js"></script>
+
+    <!--Campo de captura del punto de equilibrio-->
+    <fieldset style = "border: 1px solid white">
+        <legend> Punto de equilibrio </legend>
+        <label for = "costoFijo"> Costo fijo $ </label>
+        <input id = "costoFijo" placeholder = "100.00"/><br><br>
+        <label for = "precioUnitario01"> Precio por unidad $ </label>
+        <input id = "precioUnitario01" placeholder = "100.00"/><br><br>
+        <label for = "costVarUni"> Costo variable unitario $ </label>
+        <input id = "costVarUni" placeholder = "100.00"/><br><br>
+        <!--El imput de tipo botón se personaliza para llamar a la función de puntoEquilibrio() con onclick-->
+        <input type = "button" id = "boton" value = "Punto de equilibrio" onclick="puntoEquilibrio()">
+    </fieldset><br>
+
+    <!--Campo de captura para la utilidad bruta-->
+    <fieldset style = "border: 1px solid white">
+        <legend> Utilidad bruta </legend>
+        <label for = "precioUnitario02"> Precio por unidad $ </label>
+        <input id = "precioUnitario02" placeholder = "100.00"/><br><br>
+        <label for = "unidadesVendidas"> Unidades vendidas </label>
+        <input id = "unidadesVendidas" placeholder = "100"/><br><br>
+        <!--El imput de tipo botón se personaliza para llamar a la función de utilidadBruta() con onclick-->
+        <input type = "button" id = "boton" value = "Utilidad bruta" onclick="utilidadBruta()">
+    </fieldset><br>
+    
+    <!--Campo de captura para la utilidad neta-->
+    <fieldset style = "border: 1px solid white">
+        <legend> Utilidad neta </legend>
+        <label for = "utilidadBruta"> Utilidad bruta $ </label>
+        <input id = "utilidadBruta" placeholder="100.00"/><br><br>
+        <label for = "gastosFijos"> Gastos fijos $ </label>
+        <input id = "gastosFijos" placeholder = "100.00"/><br><br>
+        <label for = "gastosVariables"> Gastos variables $ </label>
+        <input id = "gastosVariables" placeholder = "100.00"/><br><br>
+        <!--El imput de tipo botón se personaliza para llamar a la función de utilidadNeta() con onclick-->
+        <input type = "button" id = "boton" value = "Utilidad neta" onclick="utilidadNeta()">
+    </fieldset><br>
+
+    <a target="_blank" href="https://github.com/cmarvazg/FCA/tree/master/WEB/Calculadora">
+    <img src="Images/Github.png" width="220" align="center" target=_blank"/></a>
+    <h2>Repositorio de GitHub</h2>
+    </body>
+</html>
+
